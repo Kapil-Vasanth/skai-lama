@@ -1,0 +1,39 @@
+Details
+Location: Remote (PAN India)
+
+https://www.skailama.com/
+
+Job Details - https://docs.google.com/document/d/1-oZ7nBaSa81KiAO9hDC3ZiPn_Gd1pPT1vzpcD3_ZNE8/edit#heading=h.dieqqlwk19rg
+Interview Process
+Task Assignment:
+Complete the assigned task, which will be evaluated based on code quality and UI aesthetics.
+Technical Discussion and Live Coding:
+If the assignment meets the required standards, you will move on to the technical discussion and live coding round.
+Final Discussion:
+The final stage involves a discussion to assess cultural fit within the team.
+Please confirm your intention to proceed with the assignment by replying "I accept" to the email. Once completed, we will review your work and determine the next steps in the interview process.
+
+Assignment Details
+To move forward in the interview process, you are required to complete the following assignment:
+
+Task: Create a responsive website from the provided Figma design.
+Tech Stack: MERN (MongoDB, Express, React or Next.js, Node.js).
+Ensure high standards of code quality and architecture.
+Design a well-structured database schema.
+The code should be modular and maintainable.
+An Express API should be used for all actions; data should not be stored in local storage.
+Ensure your deployment is fully functional before submission.
+Avoid using TypeScript to maintain a rapid development pace.
+Implement JWT-based authentication to prevent the need for repeated logins.
+Bonus Points:
+Prefer vanilla CSS over other CSS component libraries.
+Emphasize code modularity, readability, and the effective use of hooks and DSA concepts.
+Mention the DSA strategies you used to optimize the code in your video explanation.
+Submission Requirements
+You are required to complete this assignment within the next 3-4 days.
+
+Upon completion, please provide the following. 
+
+GitHub Repository
+Link to the Hosted Website
+Video Link explaining the project and its nuances

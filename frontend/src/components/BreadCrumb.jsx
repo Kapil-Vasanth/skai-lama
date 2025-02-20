@@ -1,0 +1,30 @@
+import React, { useContext } from 'react';
+import AuthContext from '../context/AuthContext';
+
+const BreadCrumb = ({ projectName }) => {
+    const { logout } = useContext(AuthContext);
+  return (
+    <nav className="text-gray-500 text-sm mb-4 flex justify-between items-center gap-2">
+      <div className='flex items-center gap-2'>
+        <svg className='size-4' viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.6668 2.13354L13.5345 1.1212C13.0352 0.693215 12.2984 0.693215 11.7991 1.1212L12.6668 2.13354ZM1.4668 11.7335L0.599075 10.7212L0.133464 11.1203V11.7335H1.4668ZM9.4668 24.5335V25.8669C10.2032 25.8669 10.8001 25.2699 10.8001 24.5335H9.4668ZM15.8668 24.5335H14.5335C14.5335 25.2699 15.1304 25.8669 15.8668 25.8669V24.5335ZM23.8668 11.7335H25.2001V11.1203L24.7345 10.7212L23.8668 11.7335ZM3.0668 25.8669H9.4668V23.2002H3.0668V25.8669ZM24.7345 10.7212L13.5345 1.1212L11.7991 3.14589L22.9991 12.7459L24.7345 10.7212ZM11.7991 1.1212L0.599075 10.7212L2.33452 12.7459L13.5345 3.14589L11.7991 1.1212ZM10.8001 24.5335V19.7335H8.13346V24.5335H10.8001ZM14.5335 19.7335V24.5335H17.2001V19.7335H14.5335ZM15.8668 25.8669H22.2668V23.2002H15.8668V25.8669ZM25.2001 22.9335V11.7335H22.5335V22.9335H25.2001ZM0.133464 11.7335V22.9335H2.80013V11.7335H0.133464ZM12.6668 17.8669C13.6977 17.8669 14.5335 18.7026 14.5335 19.7335H17.2001C17.2001 17.2299 15.1705 15.2002 12.6668 15.2002V17.8669ZM12.6668 15.2002C10.1631 15.2002 8.13346 17.2299 8.13346 19.7335H10.8001C10.8001 18.7026 11.6359 17.8669 12.6668 17.8669V15.2002ZM22.2668 25.8669C23.8868 25.8669 25.2001 24.5536 25.2001 22.9335H22.5335C22.5335 23.0808 22.4141 23.2002 22.2668 23.2002V25.8669ZM3.0668 23.2002C2.91952 23.2002 2.80013 23.0808 2.80013 22.9335H0.133464C0.133464 24.5536 1.44676 25.8669 3.0668 25.8669V23.2002Z" fill="#999999" />
+        </svg>
+        Home Page / {projectName} / <span className="text-purple-700">Add your podcast</span>
+      </div>
+      <div className='flex gap-2'>
+        <div className='size-12 rounded-full bg-white border border-gray-200 border-1 cursor-pointer'>
+          <svg className='p-3' viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.44458 19.0002H25.5557M5.11125 19.0002V10.1113C5.11125 5.2021 9.09094 1.22241 14.0001 1.22241C18.9093 1.22241 22.889 5.2021 22.889 10.1113V19.0002M10.4446 21.6669V22.5557C10.4446 24.5194 12.0365 26.1113 14.0001 26.1113C15.9638 26.1113 17.5557 24.5194 17.5557 22.5557V21.6669" stroke="#1D1929" stroke-width="2.26667" />
+          </svg>
+        </div>
+        <div className='size-12 rounded-full bg-white border border-gray-200 border-1 cursor-pointers' onClick={logout}>
+          <svg className='p-3' viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.6666 13.6667L19.3333 19.4444M24.6666 13.6667L19.3333 8.33333M24.6666 13.6667L7.7777 13.6667M14.8888 24.3333L3.33325 24.3333L3.33325 3L14.8888 3" stroke="#FF274C" stroke-width="2.26667" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default BreadCrumb;
