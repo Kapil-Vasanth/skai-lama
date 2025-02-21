@@ -88,7 +88,7 @@ const ProjectPage = () => {
 
     return (
         <div className="flex h-screen">
-            <Sidebar />
+            <Sidebar onOpen={() => setIsModalOpen(true)}/>
             <div className="flex-1 p-9 bg-[#F9F9F9]">
                 {/* Breadcrumb Navigation */}
                 <BreadCrumb projectName={projectName ? projectName : 'Loading...'} />

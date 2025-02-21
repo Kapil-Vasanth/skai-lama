@@ -4,18 +4,20 @@ import AuthContext from '../context/AuthContext';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 // Sidebar.jsx
-export function Sidebar() {
+export function Sidebar({onOpen}) {
     const { auth } = useContext(AuthContext);
     const user  = auth.user;
 
     return (
-        <div className="w-1/5 bg-gray-100 h-screen p-8 grid">
+        <div className="sm:w-1/3 lg:w-1/5 sm:absolute lg:static left-[-100%] transition bg-gray-100 h-screen p-8 grid">
             <div>
                 <Link to={'/dashboard'}>
                 <img src={quesPurpleLogo} alt="" className='w-1/2' />
                 </Link>
                 <ul className="my-6 border-b border-gray-800  pb-9">
-                    <li className="py-2 px-4 hover:bg-purple-200 cursor-pointer flex gap-2 items-center"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li className="py-2 px-4 hover:bg-purple-200 cursor-pointer flex gap-2 items-center" onClick={() => {
+                        onOpen();
+                    }}><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.3335 0.333374V16.3334M0.333496 8.33337H16.3335" stroke="#7E22CE" stroke-width="2.25641" />
                     </svg>
                         Add your Podcast(s)</li>

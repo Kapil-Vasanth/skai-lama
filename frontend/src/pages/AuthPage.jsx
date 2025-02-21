@@ -45,9 +45,9 @@ const AuthPage = () => {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen flex-col lg:flex-row bg-gradient-to-r from-purple-500 to-purple-900 bg-cover">
       {/* Left Box */}
-      <div className="w-1/2 w-lg-2/3 flex flex-col justify-start p-20 bg-gradient-to-r from-purple-500 to-purple-900 text-white">
+      <div className="w-full w-lg-2/3 flex flex-col justify-start p-20  bg-[url(src/assets/auth-bg.png)]  text-white">
         <img src={quesLogo} alt="" width={256} height={57} className='mb-6'/>
         <h1 className="text-[40px] text-lg-[90px] leading-tight font-thin mb-4 max-w-[647px] mt-4">
           Your podcast will no longer be just a hobby.
@@ -56,7 +56,7 @@ const AuthPage = () => {
       </div>
       
       {/* Right Box */}
-      <div className="w-1/2 w-lg-2/3 bg-gray-100 flex flex-col justify-center items-center p-10">
+      <div className="w-full w-lg-2/3 bg-gray-100 flex flex-col justify-center items-center p-10">
         <div className="text-center mb-6">
           <h2 className="text-2xl font-semibold text-purple-700">Welcome to Ques.AI</h2>
         </div>
