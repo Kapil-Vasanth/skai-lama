@@ -20,6 +20,9 @@ app.use(cors()); // Enable CORS
 connectDB();
 
 // Routes
+app.get('/api/health', (req, res) => {
+    res.status(200).json({ message: 'Backend is running smoothly!' });
+});
 app.use('/api/users', userRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/files', fileRoutes);
